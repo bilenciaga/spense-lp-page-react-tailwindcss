@@ -32,8 +32,8 @@ const Header = () => {
       </div>
 			
 			<div className='flex flex-row justify-between items-center mx-auto'>
-				<input className='p-4 border border-gray-300 rounded-md mr-5 w-full' placeholder='john@example.com'></input>
-        <button className='p-4 bg-black border border-gray-500 rounded-md text-white font-extrabold w-1/2'> Get Started </button>
+				<input className='p-4 border border-gray-300 roundex1xd-md mr-5' placeholder='john@example.com'></input>
+        <button className='p-4 bg-black border border-gray-500 rounded-md text-white font-extrabold'>Get Started </button>
 			</div>
         
     </div>

@@ -7,6 +7,7 @@ import slack from '../Assets/Slack Logo.png'
 import twitter from '../Assets/Twitter Logo.png'
 import youtube from '../Assets/Youtube Logo.png'
 
+import './LogoCarousel.css'
 
 
 import React from 'react'
@@ -17,12 +18,15 @@ const LogoCarousel = () => {
 
 
   return (
-    <div className='flex flex-row'>
-      {logoList.map((logo) => (
-        <img src={logo} alt='' className='h-[50px]'></img>
-      ))}
+  <div className='overflow-x-hidden py-12 bg-white'>
+    <div className='relative translate-x-1/2'>
+      <div className='spense-logos'>
+        {logoList.map((logo) => (
+          <img src={logo} alt='' className='h-[50px]'></img>
+        ))}
+      </div>
     </div>
-    
+  </div>
   )
 }
 

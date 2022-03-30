@@ -1,0 +1,44 @@
+.spense-logos {
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    -webkit-animation: slidein 70s linear infinite;
+    animation: slidein 70s linear infinite;
+}
+.spense-logos img {
+    max-width: 150px;
+    transition-duration: 0.1s;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    display: inline;
+    height: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        -ms-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes slidein {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(-50%, 0, 0);
+        -ms-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+}
