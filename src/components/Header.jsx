@@ -1,5 +1,6 @@
 import React from 'react'
 import heroImgMobile from '../Assets/Hero Image (Mobile).png'
+import heroImgTablet from '../Assets/Hero Image (Tablet).png'
 import checkMark from '../Assets/Checkmark.svg'
 const Header = () => {
 
@@ -16,9 +17,10 @@ const Header = () => {
   ]
 
   return (
-    <div className='flex flex-col bg-neutral-200 px-3 pb-5'>
+    <div className='flex flex-col bg-neutral-200 px-3 pb-5 md:px-7'>
       <div className='my-10'>
-        <img src={heroImgMobile} alt=''></img>
+        <img className='md:hidden' src={heroImgMobile} alt=''></img>
+        <img className='' src={heroImgTablet} alt=''></img>
       </div>
       <h1 className='text-4xl font-bold leading-snug'>Share your unfiltered thoughts. Get paid.</h1>
       <p className='my-5 font-2xl text-neutral-500'>Spense is a open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</p>
@@ -31,8 +33,8 @@ const Header = () => {
       ))}
       </div>
 			
-			<div className='flex flex-row justify-between items-center mx-auto'>
-				<input className='p-4 border border-gray-300 roundex1xd-md mr-5' placeholder='john@example.com'></input>
+			<div className='flex flex-row justify-between items-center md:items-start mx-auto md:ml-2'>
+				<input className='p-4 border border-gray-300 mr-5' placeholder='john@example.com'></input>
         <button className='p-4 bg-black border border-gray-500 rounded-md text-white font-extrabold'>Get Started </button>
 			</div>
         
