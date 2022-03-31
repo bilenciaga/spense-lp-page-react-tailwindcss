@@ -16,15 +16,15 @@ const Header = () => {
   ]
 
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col bg-neutral-200 px-3 pb-5'>
       <div className='my-10'>
         <img src={heroImgMobile} alt=''></img>
       </div>
       <h1 className='text-4xl font-bold leading-snug'>Share your unfiltered thoughts. Get paid.</h1>
-      <p className='my-5 font-2xl text-neutral-400'>Spense is a open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</p>
+      <p className='my-5 font-2xl text-neutral-500'>Spense is a open platform for individuals to share their unfiltered thoughts. Discuss the topics you love, and get paid for doing just that.</p>
       <div className='mb-5'>
       {liText.map((li,index) =>(
-        <li className='flex flex-row list-none mb-3 font-medium text-neutral-500'>
+        <li className='flex flex-row list-none mb-3 font-bold text-neutral-500'>
           <img src={checkMark} className='mr-3' alt=''></img>
           {li.text}
         </li>
